@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>mainmenu.jpg</file>
+        <file>playingfield.jpeg</file>
+        <file>phbHome.png</file>
+        <file>phbPause.png</file>
+        <file>phbPlay.png</file>
+        <file>phbReset.png</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file>style.css</file>
+    </qresource>
+</RCC>

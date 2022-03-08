@@ -1,0 +1,8 @@
+QPushButton {
+     border-radius: 16px;
+ 	background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 rgba(139,69,19,1), stop:1 rgba(255,218,185,0.05));
+	color: black;
+ }
+ QPushButton:hover {
+	background: qradialgradient(cx:0.5, cy:0.5, radius: 0.7, fx:0.5, fy:0.5, stop:0 rgba(139,69,19,1), stop:1 rgba(255,218,185,0.1));
+  }
