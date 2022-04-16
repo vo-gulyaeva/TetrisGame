@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>634</width>
-    <height>641</height>
+    <height>718</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -55,113 +55,6 @@ QLabel
 }</string>
      </property>
      <layout class="QGridLayout" name="gridCentral">
-      <item row="0" column="3">
-       <widget class="QLabel" name="labelTime">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>36</pointsize>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel{
-	color: black;
-}</string>
-        </property>
-        <property name="text">
-         <string>Время</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="3">
-       <widget class="QLabel" name="labelNext">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>36</pointsize>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel{
-	color: black;
-}</string>
-        </property>
-        <property name="text">
-         <string>След. элемент</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" rowspan="15" colspan="3">
-       <widget class="QGraphicsView" name="graphicsView">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QGraphicsView {
-	border: 4px solid #884535;
-	border-radius: 32px;
-	background: rgba(0,0,0,0);
-}</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="3">
-       <widget class="QGraphicsView" name="nextElem">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QGraphicsView{
-	border: none;
-	background: rgba(0,0,0,0);
-}</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="3">
-       <widget class="QLCDNumber" name="lcdScore">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>40</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLCDNumber{
-	color: black;
-	border: none;
-	background: rgba(0,0,0,0);
-}</string>
-        </property>
-       </widget>
-      </item>
       <item row="8" column="3">
        <layout class="QVBoxLayout" name="verticalLayout">
         <property name="sizeConstraint">
@@ -198,13 +91,14 @@ QLabel
             <property name="styleSheet">
              <string notr="true">QPushButton{
 	background: rgba(0,0,0,0);
-	background-image: url(:/img/phbPause.png);
-	border: none;
+	background-image: url(:/img/game/phbPause.png);
+	border:2px solid rgba(0,0,0,0);
 }
 QPushButton:hover{
 	background: rgba(0,0,0,0);
-	background-image: url(:/img/phbPause.png);
-	border: 2px solid #884535;
+	background-image: url(:/img/game/phbPause.png);
+	border:2px solid #000000; 
+	border-radius: 16px;
 }</string>
             </property>
             <property name="text">
@@ -233,13 +127,14 @@ QPushButton:hover{
             <property name="styleSheet">
              <string notr="true">QPushButton{
 	background: rgba(0,0,0,0);
-	background-image: url(:/img/phbReset.png);
-	border: none;
+	background-image: url(:/img/game/phbReset.png);
+	border:2px solid rgba(0,0,0,0);
 }
 QPushButton:hover{
 	background: rgba(0,0,0,0);
-	background-image: url(:/img/phbReset.png);
-	border: 2px solid #884535;
+	background-image: url(:/img/game/phbReset.png);
+	border:2px solid #000000; 
+	border-radius: 16px;
 }
 </string>
             </property>
@@ -265,13 +160,14 @@ QPushButton:hover{
             <property name="styleSheet">
              <string notr="true">QPushButton{
 	background: rgba(0,0,0,0);
-	background-image: url(:/img/phbHome.png);
-	border: none;
+	background-image: url(:/img/game/phbHome.png);
+	border:2px solid rgba(0,0,0,0);
 }
 QPushButton:hover{
 	background: rgba(0,0,0,0);
-	background-image: url(:/img/phbHome.png);
-	border: 2px solid #884535;
+	background-image: url(:/img/game/phbHome.png);
+	border:2px solid #000000; 
+	border-radius: 8px;
 }
 </string>
             </property>
@@ -284,6 +180,28 @@ QPushButton:hover{
         </item>
        </layout>
       </item>
+      <item row="5" column="3">
+       <widget class="QLabel" name="labelNext">
+        <property name="font">
+         <font>
+          <pointsize>36</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>След. элемент</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
       <item row="1" column="3">
        <widget class="QTimeEdit" name="timeEdit">
         <property name="minimumSize">
@@ -294,9 +212,11 @@ QPushButton:hover{
         </property>
         <property name="font">
          <font>
-          <family>Futura</family>
           <pointsize>36</pointsize>
          </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
          <string notr="true">QTimeEdit{
@@ -314,13 +234,54 @@ QPushButton:hover{
         <property name="buttonSymbols">
          <enum>QAbstractSpinBox::NoButtons</enum>
         </property>
+        <property name="displayFormat">
+         <string>mm:ss</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="labelTime">
+        <property name="font">
+         <font>
+          <pointsize>36</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Время</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="WidgetNextElem" name="nextElem" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	color: black;
+	border: none;
+	background: rgba(0,0,0,0);
+}</string>
+        </property>
        </widget>
       </item>
       <item row="2" column="3">
        <widget class="QLabel" name="labelScore">
         <property name="font">
          <font>
-          <family>Helvetica Neue</family>
           <pointsize>36</pointsize>
           <italic>false</italic>
           <bold>true</bold>
@@ -343,7 +304,6 @@ QPushButton:hover{
        <widget class="QLabel" name="labelControl">
         <property name="font">
          <font>
-          <family>Helvetica Neue</family>
           <pointsize>36</pointsize>
           <italic>false</italic>
           <bold>true</bold>
@@ -359,6 +319,63 @@ QPushButton:hover{
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="15" colspan="3">
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGraphicsView {
+	border: 3px solid #000000;
+	border-radius: 6px;
+	background: rgba(0,0,0,0);
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QSpinBox" name="scoreEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSpinBox{
+	color: black;
+	border: none;
+	background: rgba(0,0,0,0);
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <number>100000</number>
         </property>
        </widget>
       </item>
@@ -396,6 +413,14 @@ QPushButton:hover{
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WidgetNextElem</class>
+   <extends>QWidget</extends>
+   <header>widgetnextelem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

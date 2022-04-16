@@ -9,17 +9,32 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    game/activshape.cpp \
+    game/fixedshape.cpp \
+    game/gamescene.cpp \
+    help/help.cpp \
     main.cpp \
     mainmenu.cpp \
-    playingfield.cpp
+    game/playingfield.cpp \
+    game/widgetnextelem.cpp \
+    settings/settings.cpp
 
 HEADERS += \
+    game/activshape.h \
+    game/fixedshape.h \
+    game/gamescene.h \
+    help/help.h \
     mainmenu.h \
-    playingfield.h
+    game/playingfield.h \
+    game/widgetnextelem.h \
+    settings/settings.h
 
 FORMS += \
+    help/help.ui \
     mainmenu.ui \
-    playingfield.ui
+    game/playingfield.ui \
+    game/widgetnextelem.ui \
+    settings/settings.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

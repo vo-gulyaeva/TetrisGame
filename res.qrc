@@ -1,13 +1,21 @@
 <RCC>
     <qresource prefix="/img">
         <file>mainmenu.jpg</file>
-        <file>playingfield.jpeg</file>
-        <file>phbHome.png</file>
-        <file>phbPause.png</file>
-        <file>phbPlay.png</file>
-        <file>phbReset.png</file>
+        <file>game/phbHome.png</file>
+        <file>game/phbPause.png</file>
+        <file>game/phbPlay.png</file>
+        <file>game/phbReset.png</file>
+        <file>game/playingfield.jpeg</file>
+        <file>help/keysOne.png</file>
+        <file>help/keysTwo.png</file>
+        <file>help/downOne.png</file>
+        <file>help/downTwo.png</file>
+        <file>help/leftOne.png</file>
+        <file>help/leftTwo.png</file>
+        <file>help/rightOne.png</file>
+        <file>help/rightTwo.png</file>
+        <file>help/rotateOne.png</file>
+        <file>help/rotateTwo.png</file>
     </qresource>
-    <qresource prefix="/style">
-        <file>style.css</file>
-    </qresource>
+    <qresource prefix="/style"/>
 </RCC>
