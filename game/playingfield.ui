@@ -417,7 +417,7 @@ QPushButton:hover{
   <customwidget>
    <class>WidgetNextElem</class>
    <extends>QWidget</extends>
-   <header>widgetnextelem.h</header>
+   <header>game/widgetnextelem.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
