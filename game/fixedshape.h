@@ -22,15 +22,16 @@ class FixedShape : public QGraphicsObject
 {
      Q_OBJECT
 public:
-    FixedShape(int str, int stb, int width, int yShift);
-    FixField getField();
+    explicit FixedShape(int str, int stb, int width, int yShift);
+    FixField getField() const;
     void setField(const FixField&);
     //возвращаем true - конец игры, false - продолжаем игру
     bool setMinFixStr(int);
     void clearField();
-private:
+protected:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+private:
     bool isBottomLineFill();
 private:
     FixField field_;

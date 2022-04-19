@@ -23,33 +23,34 @@ class ActivShape : public QGraphicsObject
 {
      Q_OBJECT
 public:
-    ActivShape(int widthScene, int heightScene, int width,  const FixField &field);
+    explicit ActivShape(int widthScene, int heightScene, int width,  const FixField &field);
     void setTypeShape(const Shape&);
     void setSpeed(int);
+    bool isActive() const;
+    void setPause();
+    void setPlay();
+    void clearField();
 signals:
     //посылаем новое фикс поле и минимальную изменившуюся строчку
     void signalFell(FixField,int);
 public slots:
-    void rotateShape();
     void slotMoveShape(QKeyEvent *);
-    void setPause();
-    void setPlay();
-    void clearField();
-    bool isActive();
+protected:
+    QRectF boundingRect() const;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 private:
     enum Side
     {
         left,
         right
     };
-    QRectF boundingRect() const;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     void slotTimerMove();
     bool isTouchedField();
     void changeFixField();
     //функция проверки свободности поля в заданной стороне
     bool isFieldFree(const Side&);
     bool isRotatePossible(int,int);
+    void rotateShape();
 private:
     Shape shape_;
     int widthScene_;         //ширина сцены

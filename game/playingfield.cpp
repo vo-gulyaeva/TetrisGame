@@ -115,7 +115,7 @@ void PlayingField::changeSpeed(int level)
     level_ = level;
 }
 
-int PlayingField::speedActivElem(int level)
+int PlayingField::speedActivElem(int level) const
 {
     return 600 * 1.5/level;
 }

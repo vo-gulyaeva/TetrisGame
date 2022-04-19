@@ -38,7 +38,7 @@ void FixedShape::paint(QPainter *painter, const QStyleOptionGraphicsItem *option
             }
 }
 
-FixField FixedShape::getField()
+FixField FixedShape::getField() const
 {
     return field_;
 }

@@ -34,7 +34,7 @@ public:
     void openGame();
     void changeSpeed(int level);
 private:
-    int speedActivElem(int level);
+    int speedActivElem(int level) const;
     int generalNumElem();
     void startGame();
     void updatePosActiveElem();

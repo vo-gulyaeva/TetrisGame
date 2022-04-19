@@ -1,7 +1,8 @@
 // Тетрис, 2022
 #include "game/gamescene.h"
 
-GameScene::GameScene()
+GameScene::GameScene(QObject *parent):
+    QGraphicsScene(parent)
 {
 }
 

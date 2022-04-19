@@ -18,7 +18,7 @@ class GameScene : public QGraphicsScene
 {
     Q_OBJECT
 public:
-    GameScene();
+    explicit GameScene(QObject *parent = 0);
 protected:
     void keyPressEvent(QKeyEvent *);
     void mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent);

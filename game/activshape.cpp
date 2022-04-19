@@ -197,7 +197,7 @@ void ActivShape::setPlay()
     timerMove_->start();
 }
 
-bool ActivShape::isActive()
+bool ActivShape::isActive() const
 {
     return timerMove_->isActive();
 }
